@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+#board {
+  position: relative;
+  width: 1024px;
+  height: 863px;
+  margin: auto;
+  background: url("board.jpg") no-repeat;
+}
+
+#messageArea {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: black;
+  background-color: rgb(83, 175, 19);
+  border-radius: 5px;
+  padding: 0.1em 1em;
+}
+
+.hit {
+  background: url("ship.png") no-repeat center center;
+}
+
+.miss {
+  background: url("miss.png") no-repeat center center;
+}
+
+table {
+  border-spacing: 0px;
+  position: absolute;
+  left: 173px;
+  top: 98px;
+}
+
+td {
+  width: 94px;
+  height: 94px;
+}
+
+form {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 15px;
+  background-color: rgb(83, 175, 19);
+  border-radius: 5px;
+}
+
+form input {
+  background-color: rgb(152, 207, 113);
+  border-color: rgb(83, 175, 19);
+  font-size: 1em;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#fireButton:active {
+  background-color: rgb(224, 62, 62);
+}
